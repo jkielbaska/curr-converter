@@ -4,11 +4,7 @@ import { Home } from "./routes/Home";
 import { Error } from "./routes/Error";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyle } from "./theme/GlobalStyle";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  LoaderFunction,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient } from "@tanstack/react-query";
 import { ChooseCurrencies } from "./routes/ChooseCurrencies";
 import { Converted } from "./routes/Converted";
@@ -21,12 +17,12 @@ import {
 } from "@tanstack/react-query-persist-client";
 import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persister";
 import { Routes } from "./routes/Routes";
-// import { compress, decompress } from "lz-string";
 import { currenciesLoader } from "./routes/ChooseCurrencies";
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      cacheTime: 1000 * 60 * 60 * 24, // 24 hours
+      cacheTime: 1000 * 60 * 60 * 24,
     },
   },
 });
@@ -76,6 +72,3 @@ root.render(
 );
 
 reportWebVitals();
-
-//funkcja "lazy" w react
-//"suspense" react

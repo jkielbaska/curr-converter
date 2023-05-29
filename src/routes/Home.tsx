@@ -7,21 +7,12 @@ import { Routes } from "./Routes";
 import { Tost } from "../components/atoms/Tost";
 import { PulsingDiv } from "../components/atoms/PulsingDiv";
 import { MakeItRainBackround } from "../components/molecules/MakeItRainBackround";
-// import { useVirtualAssistant } from "@halvardm/virtual-assistant";
-// import data from "../assets/clippyConfig/clippyIndex";
 
 export const Home = () => {
   const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
-  // const va = useVirtualAssistant(data);
-  // const chooseClick = () => {
-  //   va.current.animate();
-  //   navigate(Routes.CHOOSE_CURRENCIES);
-  //   setTimeout(() => {
-  //     va.current.hide();
-  //   }, 7000);
-  // };
+
   return (
     <>
       <Header />
@@ -52,7 +43,6 @@ export const Home = () => {
             >
               CHOOSE CURRENCIES
             </Button>
-            {/* <button onClick={() => va.current.animate(true)}>Say Hello</button> */}
           </PulsingDiv>
         </Box>
       )}

@@ -48,7 +48,6 @@ export const ChooseCurrencies = () => {
   });
 
   const { data } = useGetCurrencies();
-  // console.log(data);
 
   return (
     <Box

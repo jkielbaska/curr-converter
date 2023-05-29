@@ -47,13 +47,3 @@ export const useConvertCurrencies = ({ onError, onSuccess }: ResultHandler) => {
     },
   };
 };
-
-//muszę zrobic:
-//hook, który zczytuje co mam wybrane w selekcie, wysyła zapytanie do Api
-//zapytanie za pomocą https://free.currconv.com/api/v7/convert?q=USD_PHP&compact=ultra&apiKey=8ed4a4fb6f4aece0eb04;
-//lub https://free.currconv.com/api/v7/convert?q=USD_PHP,PHP_USD&compact=ultra&apiKey=8ed4a4fb6f4aece0eb04
-//w tym samym miejscu może wykonać się konwersja
-// const conversion = ({ exchangeRat, amount }: ConvertCurrenciesData) => {
-//   const convert = exchangeRat * amount;
-//   return convert;
-// };

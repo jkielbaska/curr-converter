@@ -3,7 +3,7 @@ import {
   Button,
   Container,
   Stack,
-  Typography, //jak tego używać??
+  Typography,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -17,7 +17,7 @@ import { Routes } from "./Routes";
 export const Converted = () => {
   const navigate = useNavigate();
   const [expanded, setExpanded] = useState<boolean>();
-  const { history, latest, client, remove } = useHistoryConverted();
+  const { history, latest, remove } = useHistoryConverted();
 
   return (
     <>
@@ -122,21 +122,3 @@ export const Converted = () => {
     </>
   );
 };
-//czyszczenie historii removeClient()??
-//zmiana tagów html?
-
-//aria-label to taki label tylko go nie widać, jest dla screen readerów
-//po prostu opisuje co jest czym tak jak alt
-//jest jeszcze title (atrybut) czyli po najechaniu na dany element wyświetla się tip co to robi
-
-// client.removeQueries({
-//   queryKey: ["convert"],
-//   exact: false,
-
-/* <button
-onClick={() =>
-  setDeleteHistory((prevState: boolean) => !prevState)
-}
->
-remove
-</button> */

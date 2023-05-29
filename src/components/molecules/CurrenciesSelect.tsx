@@ -24,5 +24,3 @@ export const CurrenciesSelect = forwardRef(
     );
   }
 );
-// .sort((value) => value?.id.localeCompare(value?.id))
-// defaultValue={(props: string) => props}

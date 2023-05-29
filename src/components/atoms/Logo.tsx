@@ -3,8 +3,6 @@ import styled from "@emotion/styled";
 import logo2 from "../../assets/logo2.png";
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router";
-// import { useVirtualAssistant } from "@halvardm/virtual-assistant";
-// import data from "../../assets/clippyConfig/clippyIndex";
 
 const StyledLogo = styled.img({
   minWidth: "40px",
@@ -15,11 +13,7 @@ const StyledLogo = styled.img({
 
 export const Logo = () => {
   const navigate = useNavigate();
-  // const va = useVirtualAssistant(data);
-  //   const onClick = () => {
-  //     va.current.existsInDom();
-  //     navigate("/");
-  //   };
+
   return (
     <IconButton
       disableRipple={true}

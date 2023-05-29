@@ -39,5 +39,3 @@ export const CurrenciesServices = {
   convertCurrencies,
   getCurrencies,
 };
-// https://free.currconv.com/api/v7/currencies?apiKey=8ed4a4fb6f4aece0eb04
-// https://free.currconv.com/api/v7/convert?q=USD_PLN&compact=ultra&apiKey=8ed4a4fb6f4aece0eb04

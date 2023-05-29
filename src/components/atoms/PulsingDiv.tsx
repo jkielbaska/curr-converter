@@ -11,5 +11,3 @@ const StyledPulsingDiv = styled.div`
 export const PulsingDiv = ({ children }: { children: React.ReactNode }) => {
   return <StyledPulsingDiv>{children}</StyledPulsingDiv>;
 };
-
-// export const PulsingDiv1: React.FC<React.Props>
